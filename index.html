@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+  <link rel="stylesheet" href="./src/output.css">
+  <script defer src="./script.js"></script>
+</head>
+
+<body class="bg-navy-950 grid grid-rows-[1fr_auto] justify-items-center items-center min-h-screen">
+
+<section id="dashboard" class="px-5 py-16 sm:p-0 grid grid-cols-1 gap-6 sm:grid-cols-4">
+    <!-- profile -->
+    <section class="sm:row-span-2 bg-navy-900 rounded-2xl overflow-hidden sm:flex flex-col">
+        <div class="bg-purple-600 flex flex-row p-6 rounded-b-2xl justify-evenly sm:flex-col sm:space-y-6 pb-8 space-x-4 sm:flex-1"> 
+            <img class="border-3 border-white rounded-full w-15 h-15" src="./images/image-jeremy.png" alt="Jeremy">
+            <div class="flex flex-col justify-center">
+                <h2 class="text-sm">Report for</h2>
+                <h1 class="text-lg sm:text-3xl break-words">Jeremy <br class="hidden sm:block"> Robson</h1>
+            </div>
+        </div>
+        <!-- <div class="bg-navy-900 flex flex-row sm:flex-col justify-evenly space-x-4 px-6 py-4"> -->
+        <div id="controls" class="bg-navy-900 flex flex-row justify-evenly space-x-4 px-6 py-4 sm:flex-col sm:space-y-5">
+            <button data-period="daily">
+                daily
+            </button>
+            <button data-period="weekly">
+                weekly
+            </button>
+            <button data-period="monthly">
+                montly
+            </button>
+        </div>
+    </section>
+    
+</section>
+
+<footer class="px-2 pb-2 text-center">
+    Challenge by <a class="underline hover:text-gray-500" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a class="underline hover:text-gray-500" href="https://www.frontendmentor.io/profile/HotChickenCurry" target="_blank">Chicken Curry</a>.
+</footer>
+
+</body>
+</html>
