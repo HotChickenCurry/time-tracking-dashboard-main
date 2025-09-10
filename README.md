@@ -57,19 +57,6 @@ This project helped me practice:
 - Updating the DOM when switching between Daily, Weekly, and Monthly stats.
 - Tailwind utility classes for responsive layouts and hover effects.
 
-Here’s a small snippet I’m proud of:
-```js
-entries.forEach(([period, values]) => {
-  if (period === activePeriod) {
-    cardContent.innerHTML = `
-      <p class="current">${values.current}hrs</p>
-      <p class="previous">Last Week - ${values.previous}hrs</p>
-    `;
-  }
-});
-
-```
-
 ### Continued development
 
 In future projects, I’d like to:
